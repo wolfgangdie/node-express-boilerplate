@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development && node index.js",
-    "local": "nodemon \"npm run start\"",
+    "local": "nodemon --ext js,mjs,ejs,json --exec \"npm run start\"",
     "test": "node index.spec.js",
     "lint": "./node_modules/.bin/eslint .",
     "lint:fix": "./node_modules/.bin/eslint . --fix"
