@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.row {
+  align-self: center;
+}
+
+.row .column h1,
+.row .column p {
+  text-align: center;
+}
