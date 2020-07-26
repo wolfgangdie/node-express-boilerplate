@@ -4,11 +4,13 @@ Simple Node + Express boilerplate for starting a new project.
 
 ## Installation
 
-Before running the project for the first time, you will need to install all the dependencies using:
+1. Before running the project for the first time, you will need to install all the dependencies using:
 
-```
-$ npm install
-```
+   ```
+   $ npm install
+   ```
+
+2. Create `.env` file into project's root following `env.example` structure.
 
 ## Available scripts
 

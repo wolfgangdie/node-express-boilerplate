@@ -1,0 +1,8 @@
+{
+  "name": "Node + Express",
+  "description": "Simple Node + Express boilerplate for starting a new project",
+  "repository": "https://github.com/wolfgangdie/node-express-boilerplate",
+  "logo": "https://raw.githubusercontent.com/wolfgangdie/node-express-boilerplate/master/public/node.svg",
+  "keywords": ["node", "express"],
+  "image": "heroku/nodejs"
+}
