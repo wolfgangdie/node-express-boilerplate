@@ -1,7 +1,7 @@
 {
   "name": "node-express-boilerplate",
   "version": "1.0.0",
-  "description": "Simple Node + Express boilerplate",
+  "description": "Simple Node + Express boilerplate for starting a new project",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development && node index.js",
