@@ -1,4 +1,6 @@
+const cors = require('cors');
 const express = require('express');
+const morgan = require('morgan');
 const path = require('path');
 
 const router = require('./routes');
@@ -8,6 +10,8 @@ const { PORT = 5000 } = environment;
 
 const app = express();
 
+app.use(cors());
+app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', router);
 
