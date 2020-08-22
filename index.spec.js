@@ -2,7 +2,7 @@ const { spawn } = require('child_process');
 const got = require('got');
 const test = require('tape');
 
-const env = Object.assign({}, process.env, { PORT: 5000 });
+const env = Object.assign({}, process.env, { PORT: 5000, NODE_ENV: 'testing' });
 const child = spawn('node', ['index.js'], { env });
 
 test('responds to requests', t => {
@@ -10,7 +10,7 @@ test('responds to requests', t => {
 
   child.stdout.on('data', _ => {
     (async () => {
-      const response = await got('http://127.0.0.1:5000');
+      const response = await got(`http://127.0.0.1:${env.PORT}`);
       child.kill();
       t.false(response.error);
       t.equal(response.statusCode, 200);
